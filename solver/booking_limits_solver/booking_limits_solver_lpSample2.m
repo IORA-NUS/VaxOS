@@ -1,0 +1,12 @@
+% Sample script to demonstrate execution of function [xv, yv] = booking_limits_solver_lp(T, lt, bt, N, su, sl, c, mu, x_lb, safety)
+T = 0; % Initialize T here
+lt = 0; % Initialize lt here
+bt = 0; % Initialize bt here
+N = 0; % Initialize N here
+su = 0; % Initialize su here
+sl = 0; % Initialize sl here
+c = 0; % Initialize c here
+mu = 0; % Initialize mu here
+x_lb = 0; % Initialize x_lb here
+safety = 0; % Initialize safety here
+[xv, yv] = booking_limits_solver_lp(T, lt, bt, N, su, sl, c, mu, x_lb, safety);

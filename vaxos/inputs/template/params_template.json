@@ -1,0 +1,113 @@
+{
+    "name": "INPUT",
+    "init":{
+        "first_dose_appt": 0,
+        "num_completed_regimens": 0,
+        "num_recieved_first_dose": 0,
+        "inventory_doses": 0
+    },
+
+    "description": "",
+    "utility": {
+        "location": 1,
+        "time": 1,
+        "day_of_week": 0,
+        "limit_location_preference": {
+            "vc": 5,
+            "poly": 5,
+            "mobile": 0
+        },
+        "limit_time_preference": 30,
+        "vaccine_bias": {
+            "vaccine": "INPUT",
+            "bias": "INPUT"
+        }
+    },
+
+    "capacity": {
+        "vc": 2000,
+        "poly": 200,
+        "mobile": 0
+    },
+
+    "duration": 70,
+    "planning_duration": 70,
+    "scale_factor": 0.1,
+    "booking_lookahead": 30,
+    "randomised_demand": false,
+    "start_date": "INPUT",
+    "supply_scenario_display": "INPUT",
+    "booking_limit_strategy": "INPUT",
+    "booking_limits_solver": "INPUT",
+    "invitation_gen_solver": "INPUT",
+    "tput_weight": 0.98,
+    "booking_limit_control_duration": 1,
+    "invitation_frequency": 14,
+    "risk": "INPUT",
+    "distribution":"INPUT",
+    "demand_generator": "INPUT",
+
+    "invitation": ["INPUT"],
+    "plan_response_rate": 0.8,
+    "response_rate": 0.8,
+
+    "vaccine_settings":{
+        "Pfizer": {
+            "second_shot_gap": 21,
+            "max_second_shot_delay": 4,
+            "booking_limit_stretch": "INPUT",
+            "invitation_split": 0.6,
+            "supply_scenario": "INPUT",
+            "supply_limit": true,
+            "first_dose_booking_limit": ["INPUT"],
+            "second_dose_booking_limit": ["INPUT"],
+            "appt_book": {
+                "first_dose": {
+                    "vc": ["INPUT"],
+                    "poly": ["INPUT"],
+                    "mobile": ["INPUT"]
+                },
+                "second_dose": {
+                    "vc": ["INPUT"],
+                    "poly": ["INPUT"],
+                    "mobile": ["INPUT"]
+                }
+            },
+            "location":{
+                "vc": [27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27],
+                "poly": [20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20],
+                "mobile": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            "target": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 60450, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "Moderna": {
+            "second_shot_gap": 28,
+            "max_second_shot_delay": 4,
+            "booking_limit_stretch": 4,
+            "invitation_split": 0.4,
+            "supply_scenario": "INPUT",
+            "supply_limit": true,
+            "first_dose_booking_limit": ["INPUT"],
+            "second_dose_booking_limit": ["INPUT"],
+            "appt_book": {
+                "first_dose": {
+                    "vc": ["INPUT"],
+                    "poly": ["INPUT"],
+                    "mobile": ["INPUT"]
+                },
+                "second_dose": {
+                    "vc": ["INPUT"],
+                    "poly": ["INPUT"],
+                    "mobile": ["INPUT"]
+                }
+            },
+            "location":{
+                "vc": [13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13],
+                "poly": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "mobile": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            "target": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        }
+    }
+}
+
